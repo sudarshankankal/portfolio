@@ -1,0 +1,109 @@
+.footer {
+  background-color: var(--color-canvas-parchment);
+  padding: 48px 0 24px;
+}
+
+.footer-inner {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xl);
+}
+
+.footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: var(--space-lg);
+  border-bottom: 1px solid var(--color-hairline);
+}
+
+.footer-logo {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.28px;
+  color: var(--color-ink);
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  text-decoration: none;
+}
+
+.footer-logo:hover {
+  opacity: 0.7;
+}
+
+.footer-logo-accent {
+  color: var(--color-primary);
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.footer-nav-link {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -0.12px;
+  color: var(--color-ink-muted-80);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-nav-link:hover {
+  color: var(--color-primary);
+  opacity: 1;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer-copyright {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -0.12px;
+  color: var(--color-ink-muted-48);
+}
+
+.footer-built {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -0.12px;
+  color: var(--color-ink-muted-48);
+}
+
+.footer-built-accent {
+  color: var(--color-primary);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .footer-top {
+    flex-direction: column;
+    gap: var(--space-lg);
+    text-align: center;
+  }
+  .footer-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-md);
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: var(--space-sm);
+    text-align: center;
+  }
+}
